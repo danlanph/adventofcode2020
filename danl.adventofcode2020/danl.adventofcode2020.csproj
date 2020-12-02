@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <Folder Include="ExpenseReport01\" />
+    <Folder Include="PasswordDatabase02\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="ExpenseReport01\input.txt" />
