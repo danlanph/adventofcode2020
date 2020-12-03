@@ -4,15 +4,8 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
-
+  
   <ItemGroup>
-    <Folder Include="ExpenseReport01\" />
-    <Folder Include="PasswordDatabase02\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Remove="ExpenseReport01\input.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="**/*" />
+    <EmbeddedResource Include="**/*.txt" />
   </ItemGroup>
 </Project>

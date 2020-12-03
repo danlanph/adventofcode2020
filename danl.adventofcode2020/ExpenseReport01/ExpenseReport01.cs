@@ -15,7 +15,7 @@ namespace danl.adventofcode2020.ExpenseReport01
         public ExpenseReport01(string inputString)
         {
             ExpenseReportNumbers = inputString
-                .Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries)
+                .Split(InputHelper.LineEnding, StringSplitOptions.RemoveEmptyEntries)
                 .Select(x => x.Trim())
                 .Select(int.Parse)
                 .ToArray();
