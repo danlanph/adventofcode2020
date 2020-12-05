@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace danl.adventofcode2020.TobogganRoute03
@@ -23,10 +22,7 @@ namespace danl.adventofcode2020.TobogganRoute03
 
         public static void Run(int part)
         {
-            var input = "..##.......\n#...#...#..\n.#....#..#.\n..#.#...#.#\n.#...##..#.\n..#.##.....\n.#.#.#....#\n.#........#\n#.##...#...\n#...##....#\n.#..#...#.#";
-
-            var tobogganRoute = new TobogganRoute03(InputHelper.GetResourceFileAsString(InputFileResourceName));
-            //var tobogganRoute = new TobogganRoute03(input);
+            var tobogganRoute = new TobogganRoute03(InputHelper.GetResourceFileAsString(InputFileResourceName));            
 
             switch (part)
             {
