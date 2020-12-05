@@ -14,7 +14,7 @@ namespace danl.adventofcode2020.PasswordDatabase02
         public PasswordDatabase02(string inputString)
         {
             PasswordDatabase = inputString
-                .Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries)
+                .Split(InputHelper.LineEnding, StringSplitOptions.RemoveEmptyEntries)
                 .Select(row =>
                 {
                     var rowFields = row.Split(':', 2);
@@ -56,7 +56,7 @@ namespace danl.adventofcode2020.PasswordDatabase02
             return PasswordDatabase.Count(x => IsPasswordEntryValid(x, passwordPolicyValidator));
         }
 
-        public static bool IsPasswordEntryValid(PasswordDatabaseEntry passwordDatabaseEntry, IPasswordPolicyValidator passwordPolicyValidator)
+        public static bool IsPasswordEntryValid(PasswordDatabaseEntry passwordDatabaseEntry, IPasswordPolicyValidator passwordPolicyValidator)        
         {
             passwordPolicyValidator.LoadPolicy(passwordDatabaseEntry.PasswordPolicyString);
             return passwordPolicyValidator.ValidatePassword(passwordDatabaseEntry.Password);
