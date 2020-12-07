@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace danl.adventofcode2020.PasswordDatabase02
 {
-    [Puzzle(puzzleNumber: 2, numberOfParts: 1)]
+    [Puzzle(puzzleNumber: 2, numberOfParts: 2)]
     public class PasswordDatabase02
     {
         public const string InputFileResourceName = "danl.adventofcode2020.PasswordDatabase02.input.txt";
