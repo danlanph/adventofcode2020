@@ -48,7 +48,7 @@ namespace danl.adventofcode2020.TobogganRoute03
                         Console.WriteLine($"Slope {slopes[3].x},{slopes[3].y} encounters {tobogganRoute.GetNumberOfTreesEncountered(slopes[3])} trees.");
                         Console.WriteLine($"Slope {slopes[4].x},{slopes[4].y} encounters {tobogganRoute.GetNumberOfTreesEncountered(slopes[4])} trees.");
 
-                        var numberOfTreesForDifferentSlopesMultiplied = slopes.Aggregate(1l, 
+                        var numberOfTreesForDifferentSlopesMultiplied = slopes.Aggregate(1L, 
                             (p, slope) =>
                             {
                                 return p * tobogganRoute.GetNumberOfTreesEncountered(slope);
