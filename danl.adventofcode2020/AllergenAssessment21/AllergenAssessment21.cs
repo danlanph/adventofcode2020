@@ -140,16 +140,5 @@ namespace danl.adventofcode2020.AllergenAssessment21
 
             return allergenToIngredientMapping;
         }
-
-        /*private IList<IngredientList> GetIngredientLists()
-        {
-            return _foods
-                .Select(f => new IngredientList
-                {
-                    Ingredients = f.Ingredients.ToList(),
-                    Allergens = f.Allergens.ToList()
-                })
-                .ToList();
-        }*/
     }
 }
