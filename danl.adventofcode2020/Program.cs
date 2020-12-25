@@ -13,7 +13,7 @@ namespace danl.adventofcode2020
         {
             GetPuzzleToRun(args);
 
-            var method = typeof(CrabCups23.CrabCups23).GetMethod("Run", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public);
+            var method = typeof(LobbyLayout24.LobbyLayout24).GetMethod("Run", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public);
             method.Invoke(null, new object[] { 2 });
         }
 
