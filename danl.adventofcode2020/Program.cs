@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace danl.adventofcode2020
+﻿namespace danl.adventofcode2020
 {
     class Program
     {
@@ -13,8 +11,8 @@ namespace danl.adventofcode2020
         {
             GetPuzzleToRun(args);
 
-            var method = typeof(LobbyLayout24.LobbyLayout24).GetMethod("Run", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public);
-            method.Invoke(null, new object[] { 2 });
+            var method = typeof(ComboBreaker25.ComboBreaker25).GetMethod("Run", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public);
+            method.Invoke(null, new object[] { 1 });
         }
 
         public static void GetPuzzleToRun(string[] args)
